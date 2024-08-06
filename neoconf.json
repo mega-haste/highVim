@@ -2,6 +2,7 @@
 	"lspconfig": {
 		"tsserver": {},
 		"lua_ls": {},
-		"jsonls": {}
+		"jsonls": {},
+		"ocamllsp": {}
 	}
 }

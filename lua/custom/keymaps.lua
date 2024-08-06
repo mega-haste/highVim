@@ -26,13 +26,22 @@ map('', '<C-s>', ':w<CR>')
 -- Neotree keymaps
 map('', '<C-n>', ':Neotree toggle<CR>')
 
+-- Telescope
+do
+	local telescopeBuiltin = require('telescope.builtin')
+	mapfn('n', "<leader>ff", telescopeBuiltin.find_files)
+	mapfn('n', '<leader>fg', telescopeBuiltin.live_grep)
+	mapfn('n', '<leader>fb', telescopeBuiltin.buffers)
+	mapfn('n', '<leader>fh', telescopeBuiltin.help_tags)
+end
+
 -- lsp keymaps
-vim.keymap.set("n", "gd", vim.lsp.buf.definition)
-vim.keymap.set("n", "K", vim.lsp.buf.hover)
-vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol)
-vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float)
-vim.keymap.set("n", "[d", vim.diagnostic.goto_next)
-vim.keymap.set("n", "]d", vim.diagnostic.goto_prev)
-vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action)
-vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references)
-vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename)
+mapfn("n", "gd", vim.lsp.buf.definition)
+mapfn("n", "K", vim.lsp.buf.hover)
+mapfn("n", "<leader>vws", vim.lsp.buf.workspace_symbol)
+mapfn("n", "<leader>vd", vim.diagnostic.open_float)
+mapfn("n", "[d", vim.diagnostic.goto_next)
+mapfn("n", "]d", vim.diagnostic.goto_prev)
+mapfn("n", "<leader>vca", vim.lsp.buf.code_action)
+mapfn("n", "<leader>vrr", vim.lsp.buf.references)
+mapfn("n", "<leader>vrn", vim.lsp.buf.rename)
