@@ -17,11 +17,11 @@ local function mapfn(mode, lhs, rhs, opts)
 end
 
 -- Keymaps
-mapfn('n', '<leader>rn', function()
-	vim.o.relativenumber = not vim.o.relativenumber
-end)
-
+mapfn('n', '<leader>rn', function() vim.o.relativenumber = not vim.o.relativenumber end)
 map('', '<C-s>', ':w<CR>')
+
+-- Dismiss Noice Message
+map("n", "<leader>nd", ":NoiceDismiss<CR>", { desc = "Dismiss Noice Message" })
 
 -- Neotree keymaps
 map('', '<C-n>', ':Neotree toggle<CR>')

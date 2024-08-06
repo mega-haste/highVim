@@ -1,4 +1,6 @@
 
+require "custom.globals"
+
 require "config"
 require "custom"
 
