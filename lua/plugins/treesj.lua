@@ -6,5 +6,7 @@ return {
 		'<leader>s'
 	},
 	dependencies = { 'nvim-treesitter/nvim-treesitter' },
-	opts = {}
+	opts = {
+		max_join_length = 1000,
+	}
 }
