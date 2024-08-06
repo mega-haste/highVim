@@ -1,3 +1,4 @@
 
-print "Hi!!"
+require "custom"
+require "config"
 
