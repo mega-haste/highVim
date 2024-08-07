@@ -4,6 +4,7 @@ require "config.neoconf"
 require "config.lsp_zero"
 require "config.mason"
 require "config.mason_lspconfig"
+require "config.lspconfig"
 
 require "config.lualine"
 

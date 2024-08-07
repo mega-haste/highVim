@@ -13,7 +13,6 @@ lsp_zero.set_preferences({
 
 lsp_zero.setup()
 
-
 local cmp = require("cmp")
 cmp.setup.cmdline('/', {
 	mapping = cmp.mapping.preset.cmdline(),
