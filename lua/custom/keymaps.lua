@@ -35,6 +35,17 @@ do
 	mapfn('n', '<leader>fh', telescopeBuiltin.help_tags)
 end
 
+-- BufferLine
+map("n", "<leader>tn", ":BufferLineMoveNext<CR>")
+map("n", "<leader>tb", ":BufferLineMovePrev<CR>")
+
+map("n", "<TAB>", ":BufferLineCycleNext<CR>")
+map("n", "<S-TAB>", ":BufferLineCyclePrev<CR>")
+
+map("n", "<leader>tpc", ":BufferLinePickClose<CR>")
+map("n", "<leader>tpp", ":BufferLinePick<CR>")
+map("n", "<leader>tc", ":bdelete<CR>")
+
 -- lsp keymaps
 mapfn("n", "gd", vim.lsp.buf.definition)
 mapfn("n", "K", vim.lsp.buf.hover)

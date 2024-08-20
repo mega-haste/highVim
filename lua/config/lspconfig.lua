@@ -1,8 +1,6 @@
 local lspconfig = require("lspconfig")
 
-lspconfig.tsserver.setup {
-	cmd = { 'tsserver', '--stdio' },
-}
+lspconfig.tsserver.setup {}
 
 lspconfig.lua_ls.setup {
 	settings = {
