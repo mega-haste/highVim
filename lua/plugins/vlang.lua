@@ -1,0 +1,3 @@
+return {
+	"thecodinglab/nvim-vlang"
+}
